@@ -1,2 +1,0 @@
-# mochilaFrontEnd
-Almacenamiento de ejercitaciones
