@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav-bar{
+    background-color: #222222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#nav-bar div{
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar div img{
+    padding: 10px;
+}
+
+#nav-bar ul{
+    display: flex;
+    list-style: none;
+}
+
+#nav-bar ul a{
+    color: #ffffff;
+    list-style: none;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+#section-main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#section-main article{
+    margin-top: 10px;
+}
+
+#articulo-envio-gratis{
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    left: 20px;
+}
+
+h1, h2{
+    color:red;
+    font-size: 24px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h1 span{
+    color:white;
+}
+
+ol{
+    font-weight: bold;
+}
+
+#contenedor-pizza-lista{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#podio-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    width: 491px;
+    justify-content: space-around;
+}
+
+footer{
+    display: flex;
+    background-color: #222222;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+}
+
+footer div img{
+    padding: 10px;
+}
+
+
+footer ul{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+footer ul a{
+    color: #ffffff;
+    list-style: none;
+    padding: 10px;
+    text-decoration: none;
+}
