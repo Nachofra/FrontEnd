@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    margin: 0;
+    padding: 25px;
+    font-size: 40px;
+}
+
+#header-heroes{
+    background-color: #00669F;
+    height: 101px;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+#header-descuento-p{
+    margin-top: 0;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#header-descuento{
+    background-color: #1CD1B0;
+    height: 38px;
+}
+
+#body-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0px;
+    position: relative;
+}
+
+#body-section article{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 529px;
+    background-color: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 20px;
+}
+
+.corazon{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.perfil{
+    position: absolute;
+    top: 130px;
+    border-radius: 50%;
+}
+
+.contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0px 10px;
+}
+
+.contenedor-texto button{
+    background-color: #00669F;
+    border-style: none;
+    border-radius: 7px;
+    color: #FFFFFF;
+    width: 150px;
+    height: 50px;
+}
+
+#icono-mas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00669F;
+    color: #FFFFFF;
+    position: absolute;
+    top: 48%;
+    right: 0%;
+    z-index: 1;
+}
+
+#icono-mas img{
+    width: 20px;
+    height: 20px;
+}
+
+#footer-derechos{
+    background-color: #00669F;
+    height: 51px;
+    text-align: center;
+}
+
+#footer-derechos p{
+    color: white;
+    font-size: 16px;
+    padding: 15px;
+}
+
+div{
+    height: 2000px;
+}
+
+@media (max-width:460px) {
+    #body-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+    
