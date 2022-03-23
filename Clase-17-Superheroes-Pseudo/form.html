@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superheroes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section>
+            <article id="header-descuento">
+               <p id="header-descuento-p">20% de descuento en todos los productos!</p>
+            </article>
+            <article id="header-heroes">
+                <img src="img/logo-compu.png" alt="">
+                <h1>Nombre Tienda</h1>
+            </article>
+            <nav>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Registrarme</a></li>
+                    <li><a href="#">Ingresar</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main id="main">
+        <h2>Lo hice feo pero añadí las pseudoclases que pude :)</h2>
+        <section id="section-form">
+            <h1>Añadí tu super!</h1>
+            <h3>Agregá tu personaje favorito completando las opciones.</h3>
+            <form id="form" method="get" action="#proceso.php">
+                <div class="form-column">
+                    <label for="nombre">
+                        *Nombre
+                        <input class="input" type="text" name="nombre" id="nombre" required>
+                    </label>
+                    <label for="date">
+                        Fecha
+                        <input class="input" type="date" name="creacion" id="date" required>
+                    </label>
+                    <label id="label-texto" for="texto">
+                        <textarea name="texto" id="texto" placeholder="Descripcion" required></textarea>
+                    </label>
+                </div>
+                <div class="form-column">
+                    <label for="especie">
+                        *Especie
+                        <select class="input" name="especie" id="especie" required>
+                            <option value="Human">Humano</option>
+                            <option value="Alien">Alienigena</option>
+                            <option value="Robot">Robot</option>
+                        </select>
+                    </label>
+                    <label for="foto" id="foto">
+                        Agregar Foto
+                        <input class="input" type="file" name="foto" id="foto" required>
+                    </label>
+                    <fieldset>
+                        <legend>Poderes</legend>
+                        <label for="volar">
+                            <input type="checkbox" name="poderes" id="volar">
+                            Volar
+                        </label>
+                        <label for="super-inteligencia">
+                            <input type="checkbox" name="poderes" id="super-inteligencia">
+                            Superinteligencia
+                        </label>
+                        <label for="rayo-laser">
+                            <input type="checkbox" name="poderes" id="rayo-laser">
+                            Vista rayo laser
+                        </label>     
+                        <label for="billetera">                 
+                            <input type="checkbox" name="poderes" id="billetera">
+                            Billetera gorda
+                        </label>
+
+                        <hr> 
+    
+                        <legend>Tipo de personaje</legend>
+                        <label for="heroe">
+                            <input type="radio" name="poderes" id="heroe">
+                            Heroe / Heroina
+                        </label>    
+                        <label for="villano">                 
+                            <input type="radio" name="poderes" id="villano">
+                            Villano / Villana
+                        </label>
+                    </fieldset>
+                </div>
+            </form> 
+            <button id='form-button' type="submit" form="form">Añadir</button>
+        </section>
+        <a id="volver" href="index.html">Volver al Home</a>
+    </main>
+    <footer>
+        <section id="footer-derechos">
+            <p>Todos los derechos reservador a FRONT END 1</p>
+        </section>
+    </footer>
+</body>
+</html>
