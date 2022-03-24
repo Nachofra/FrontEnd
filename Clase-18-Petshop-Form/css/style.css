@@ -1,0 +1,414 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#menu{
+    display: none;
+}
+
+/*    COMIENZA HEADER     */
+
+#section-header{
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-ofertas{
+    display: flex;
+    background: #222222;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#nav-principal{
+    display: flex;
+    background: #F0A83E;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+#img-logo{
+    width: 166px;
+    height: 23px;
+    padding: 10px;
+}
+
+#nav-ofertas div{
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#nav-principal ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-principal ul a{
+    padding: 0 10px;
+}
+
+.header-text{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    list-style: none;
+    padding: 0 10px;
+}
+
+/*   TERMINA HEADER     */
+
+/*   COMIENZA MAIN IMAGEN    */
+
+#contenedor-img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-image: url("../img/comederoBanner.png");
+    background-size: cover;
+    height: 409px;
+}
+
+#contenedor-img-main{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    width: 380px;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+#contenedor-img-main h2{
+    font-size: 30px;
+    color: #3C2313;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#contenedor-img-main p{
+    font-size: 18px;
+    color: #3C2313;
+    margin-bottom: 10px;
+}
+
+#contenedor-img-main button{
+    background-color:#F0A83E;
+    border-style: none;
+    border-radius: 5px;
+    padding: 25px;
+    font-size: 16px;
+}
+
+#contenedor-img a{
+    width: 100%;
+}
+
+#contenedor-img img{
+    width: 100%;
+    height: 409px;
+}
+
+/*   TERMINA MAIN IMAGEN    */
+
+/*   COMIENZA PRODUCTOS MAIN CATEGORIA    */
+
+#contenedor-productos-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#contenedor-productos-categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#contenedor-productos-categoria h1{
+    font-size: 40px;
+    color: #3C2313;
+    font-weight: bold;
+}
+
+#contenedor-productos-categoria ul{
+    display: flex;
+    padding: 0px;
+    list-style: none;
+}
+
+#contenedor-productos-categoria ul a, li{
+    padding: 0 10px;
+    text-decoration: none;
+    color: #666666;
+    font-size: 17px;
+}
+
+/*   TERMINA PRODUCTOS MAIN CATEGORIA    */
+
+/*   COMIENZA PRODUCTOS MAIN LISTA    */
+
+#contenedor-productos-lista{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 30px 0px;
+    position: relative;
+}
+
+#contenedor-productos-lista article{
+    display: flex;
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+#contenedor-productos-lista article a,img{
+    height: 100%;
+}
+
+.producto-nombre-precio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin: 20px 0px;
+}
+
+.producto-nombre-precio p{
+    margin: 0px;
+    color:#3C2313;
+    font-weight: bold;
+}
+
+#importe{
+    color: #F0A83E;
+    font-weight: bold;
+}
+
+
+
+/*   TERMINA PRODUCTOS MAIN LISTA    */
+
+/*   COMIENZA PRODUCTOS MAIN CONTACTO    */
+
+#contenedor-productos-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 400px;
+}
+
+#contenedor-productos-contacto h2{
+    margin: 0px;
+    color: #3C2313;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+#contenedor-productos-contacto input{
+    height: 40px;
+    width: 100%;
+    background: #3C2313;
+    border-radius: 15px;
+    padding: 0px 10px;
+    color: white;
+}
+
+::placeholder{
+    color: white;
+    font-weight:100;
+}
+
+#contenedor-productos-contacto button{
+    background-color:#F0A83E;
+    border-style: none;
+    border-radius: 15px;
+    width: 110px;
+    height: 34px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#reset-send{
+    margin-top: 20px;
+    
+}
+
+#reset-send #reset{
+    background-color: #8A8787;
+}
+
+/*   TERMINA PRODUCTOS MAIN CONTACTO    */
+
+/*   COMIENZA FOOTER MAIN CORREO    */
+
+#contenedor-footer-main{
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedor-footer-correo{
+    background-color:#F0A83E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#imagen-correo, #form-correo{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    width: 450px;
+}
+
+#form-correo{
+    margin: 0px 20px;
+}
+
+#form-correo input{
+    margin: 0px 10px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    border-style: none;
+    width: 100%;
+    height: 40px;
+    flex-shrink: 0.40;
+    padding: 0px 10px;
+}
+
+#form-correo button{
+    height: 40px;
+    width: 100%;
+    background: #3C2313;
+    color: white;
+    border-radius: 15px;
+    padding: 0px 10px;
+}
+
+
+#form-correo ::placeholder{
+    color: grey;
+    font-weight:100;
+}
+
+#imagen-correo img{
+    padding: 0px 10px;
+}
+
+#imagen-correo h2{
+    color: white;
+    font-weight: 400;
+}
+
+/*   TERMINA FOOTER MAIN CORREO    */
+
+/*   COMIENZA FOOTER MAIN INFO    */
+
+#contenedor-footer-info{
+    background-color:#3C2313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contenedor-footer-info-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+#contenedor-footer-info-lista .card{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.card img{
+    padding: 0px 20px;
+}
+
+.card h2,p{
+    margin: 0px;
+}
+
+.card h2{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.card p{
+    font-size: 10px;
+    color: #8A8787;
+}
+
+#contenedor-footer-info #logo-footer{
+    margin-right: 30px;
+    width: 200px;
+}
+
+/*   TERMINA FOOTER MAIN INFO    */
+
+/*   COMIENZA FOOTER MAIN DERECHOS    */
+
+#contenedor-footer-derechos{
+    background-color:#222222;
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor-footer-derechos span{
+    color: white;
+    padding: 2px 0px;
+}
+
+/*   TERMINA FOOTER MAIN DERECHOS    */
+
+
+@media (max-width: 850px) {
+    #nav-ofertas, #nav-principal ul{
+        display: none;
+    }
+    #menu{
+        display: block;
+        width: 20px;
+    }
+    #contenedor-img{
+        justify-content: center;
+    }
+    #contenedor-img-main{
+        margin: 0px;
+        align-items: flex-end;
+    }
+    #contenedor-productos-lista{
+        flex-direction: column;
+        position: relative;
+    }
+    #contenedor-productos-lista article{
+        margin: 10px 0px;
+    }
+    #contenedor-footer-correo{
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 0px 20px 0px;
+    }
+    #contenedor-footer-info{
+        flex-direction: column-reverse;
+        padding: 20px 0px 0px 0px;
+    }
+  }
