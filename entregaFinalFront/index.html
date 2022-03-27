@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Entrega Final FrontEnd</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,10 +15,10 @@
 <body>
     <header class="header">
         <nav class="nav-header">
-            <img src="img/logo.svg" alt="logo-empresa">
+            <img src="img/logo.svg" alt="logo-empresa" class="logo-empresa">
 
             <ul class="formato-lista" id="lista-nav">
-                <li><a href="#Princing">Princing</a></li>
+                <li><a href="#Princing">Pricing</a></li>
                 <li><a href="#Product">Product</a></li>
                 <li><a href="#About Us">About Us</a></li>
                 <li><a href="#Careers">Careers</a></li>
@@ -26,6 +26,8 @@
             </ul>
 
             <a href="#getStarted" class="button">Get Started</a>
+            
+            <img id="nav-header-hamburger" src="img/icon-hamburger.svg" alt="hamburger">
         </nav>
     </header>
     
@@ -38,17 +40,17 @@
                         Bring everyone together to build better products.
                     </h1>
 
-                    <p class="texto">
+                    <p class="texto texto-claro">
                         Manage makes it simple for software teams
                         to plan day-to-day tasks while keeping the 
-                        large team goals in view 
+                        large team goals in view.
                     </p>
 
                     <a href="#getStarted" class="button">Get Started</a>
                 </div>
             </article>
             <article class="main-section-contenedor">
-                <img src="img/illustration-intro.svg" alt="ilustracion-principal">
+                <img id="img-principal" src="img/illustration-intro.svg" alt="ilustracion-principal">
             </article>
         </section>
 
@@ -60,10 +62,10 @@
                         What's different about
                         Manage? 
                     </h2>
-                    <p class="texto">
+                    <p class="texto texto-claro">
                         Manage provides all the functionality your
                         teas needs, without the complexity. Our software 
-                        is tailor-made for modern digital product teams
+                        is tailor-made for modern digital product teams.
                     </p>
                 </div>
             </article>
@@ -101,12 +103,12 @@
         
         <section class="main-section main-section-perfiles">
             <h3 class="titulo">What they've said</h3>
-            <article class="main-section-contenedor">
+            <article class="main-section-contenedor main-section-contenedor-perfiles">
                 <div class="main-section-contenedor-hijo">
                     <div class="main-section-contenedor-hijo-perfil">
                         <img src="img/avatar-anisha.png" alt="customer-logo">
                         <h4 class="titulo">Anisha Li</h4>
-                        <p class="texto">
+                        <p class="texto texto-claro">
                             “Manage has supercharged our team's workflow. 
                             The ability to maintain visibility on larger 
                             milestones at all times keeps everyone motivated.”
@@ -117,7 +119,7 @@
                     <div class="main-section-contenedor-hijo-perfil">
                         <img src="img/avatar-ali.png" alt="customer-logo">
                         <h4 class="titulo">Ali Bravo</h4>
-                        <p class="texto">
+                        <p class="texto texto-claro">
                             “We have been able to cancel so many 
                             other subscriptions since using manage. 
                             There ir no more cross-channel confusion and 
@@ -129,7 +131,7 @@
                     <div class="main-section-contenedor-hijo-perfil">
                         <img src="img/avatar-richard.png" alt="">
                         <h4 class="titulo">Richard Watts</h4>
-                        <p class="texto">
+                        <p class="texto texto-claro">
                             “Manage allows us to provide structure and 
                             process. It keeps us organized and focused. 
                             I can't stop recommending them to everyone i 
@@ -138,6 +140,12 @@
                     </div>
                 </div>
             </article>
+            <div class="button-radio">
+                <span class="radio-customer"></span>
+                <span class="radio-customer"></span>
+                <span class="radio-customer"></span>
+                <span class="radio-customer"></span>
+            </div>
             <a href="#getStarted" class="button">Get Started</a>
         </section>
 
@@ -147,7 +155,7 @@
         <div class="footer-contenedor">
             <div class="footer-contenedor-hijo">
                 <h2 class="titulo">
-                    Simplify hoy your team
+                    Simplify how your team
                     words today.
                 </h2>
                 <a href="#getStarted" class="button button-footer">Get Started</a>
@@ -157,36 +165,41 @@
         <div class="footer-contenedor">
             <div class="footer-contenedor-hijo">
                 <div class="footer-contenedor-hijo-info">
-                    <img src="img/logo.svg" alt="logo-empresa">
-                    <ul class="formato-lista-imagenes">
-                        <li><img src="img/icon-facebook.svg" alt="facebook-icon"></li>
-                        <li><img src="img/icon-youtube.svg" alt="youtube-icon"></li>
-                        <li><img src="img/icon-twitter.svg" alt="twitter-icon"></li>
-                        <li><img src="img/icon-pinterest.svg" alt="pinterest-icon"></li>
-                        <li><img src="img/icon-instagram.svg" alt="instagram-icon"></li>
+                    <p class="copy-rights-text" id="copy-rights-text-mobile">
+                        Copyright 2020. All Rights Reserved
+                    </p>
+                    <img src="img/logo-footer.svg" alt="logo-empresa" class="logo-empresa">
+                    <ul class="formato-lista formato-lista-imagenes">
+                        <li><a href="#facebook"><img src="img/icon-facebook.svg" alt="facebook-icon"></a></li>
+                        <li><a href="#youtube"><img src="img/icon-youtube.svg" alt="youtube-icon"></a></li>
+                        <li><a href="#twitter"><img src="img/icon-twitter.svg" alt="twitter-icon"></a></li>
+                        <li><a href="#pinterest"><img src="img/icon-pinterest.svg" alt="pinterest-icon"></a></li>
+                        <li><a href="#instagram"><img src="img/icon-instagram.svg" alt="instagram-icon"></a></li>
                     </ul>
                 </div>
-                <div class="footer-contenedor-hijo-info">
-                    <ul class="formato-lista">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">About Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contenedor-hijo-info">
-                    <ul class="formato-lista">
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">Community</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                    </ul>
+                <div class="footer-contenedor-listas">
+                    <div class="footer-contenedor-hijo-info">
+                        <ul class="formato-lista">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contenedor-hijo-info">
+                        <ul class="formato-lista">
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Community</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer-contenedor-hijo-info">
                     <form class="footer-contenedor-hijo-info-form" action="procesoDefault.php" method="#">
-                        <input type="email" placeholder="example@yourcompany.com" class="button, button-footer">
+                        <input type="email" placeholder="Update in your inbox..." class="button button-footer">
                         <button type="submit" class="button">Go</button>
                     </form>
-                    <p class="copy-rights-text">
+                    <p class="copy-rights-text" id="copy-rights-text-desktop">
                         Copyright 2020. All Rights Reserved
                     </p>
                 </div>
