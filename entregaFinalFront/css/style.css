@@ -251,9 +251,8 @@ h4::before{
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    margin: 0 1rem 0 1rem;
     border: 2px solid #F3613C ;
-    margin: 1rem 1rem;
+    margin: 1rem 0.5rem;
 }
 
 .radio-customer:active{
@@ -564,6 +563,8 @@ h4::before{
         display: flex;
         justify-content: center;
         align-items: center;
+        border-top-right-radius: 3rem;
+        border-bottom-right-radius: 3rem;
         background-color: rgba(249, 143, 117, 0.25);
         width: 23.5rem;
         height: 2.45rem;
