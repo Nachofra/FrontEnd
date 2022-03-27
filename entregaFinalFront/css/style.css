@@ -1,0 +1,192 @@
+/* ESTILOS GENERALES */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 3.6rem;
+    font-weight: 700, bold;
+}
+
+h2{
+    font-size: 2.25rem;
+}
+
+h4{
+    position: relative;
+}
+
+h4::before{
+    font-weight: 300;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: -0.35rem;
+    left: -5.5rem;
+    width: 4rem;
+    height: 2.5rem;
+    background: #F3603B;
+    border-radius: 3rem;
+    color: #FFFFFF;
+}
+
+.main-section-contenedor-hijo-diferencias-empresa-lista:nth-child(1) h4::before{
+    content: '01';
+}
+
+.main-section-contenedor-hijo-diferencias-empresa-lista:nth-child(2) h4::before{
+    content: '02';
+}
+
+.main-section-contenedor-hijo-diferencias-empresa-lista:nth-child(3) h4::before{
+    content: '03';
+}
+
+.titulo{
+    color: #232C50;
+    text-align: left;
+}
+
+.texto{
+    color: #000000;
+    text-align: left;
+}
+
+.texto-claro{
+    color: #B3B2B7;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F3603B;
+    box-shadow: 0 0.25rem 0.45rem rgba(0, 0, 0, 0.25);
+    border-radius: 3rem;
+    height: 3rem;
+    width: 10rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.button:hover{
+    opacity: 0.8;
+    box-shadow: 0 0.25rem 0.45rem rgba(243, 96, 59, 0.5);
+}
+
+/* ESTILOS HEADER */
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 78.5%;
+}
+
+.formato-lista{
+    display: flex;
+    list-style: none;
+}
+
+.formato-lista li a{
+    text-decoration: none;
+    color: #242E52;
+    padding: 0 1rem;
+}
+
+/* ESTILOS MAIN */
+
+/* PRIMERA SECCION */
+
+.main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row;
+    height: 33.3%;
+    width: 78.5%;
+    justify-content: space-between;
+}
+
+.main-section-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main-section-contenedor-hijo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-section-contenedor-hijo-presentacion-empresa{
+    width: 70%;
+    height: 95%;
+}
+
+.main-section-contenedor-hijo *{
+    margin: 0.9rem 0;
+}
+
+.main-section-contenedor-hijo-presentacion-empresa .texto{
+    width: 55%;
+}
+
+/* SEGUNDA SECCION */
+
+.diferencias-empresa{
+    width: 50%;
+}
+
+.main-section-contenedor-hijo-diferencias-empresa{
+    width: 67%;
+    height: 80%;
+}
+
+.diferencias-empresa-lista{
+    flex-direction: column;
+    width: 35%;
+    margin-top: 7.8rem;
+}
+
+.main-section-contenedor-hijo-diferencias-empresa-lista{
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* TERCERA SECCION */
+
+.main-section-perfiles{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ESTILOS FOOTER */
+
+.footer{
+    width: 100vw;
+}
