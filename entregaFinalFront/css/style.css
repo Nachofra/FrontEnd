@@ -100,6 +100,7 @@ h4::before{
 .button:hover{
     opacity: 0.8;
     box-shadow: 0 0.25rem 0.45rem rgba(243, 96, 59, 0.5);
+    cursor: pointer;
 }
 
 /* ESTILOS HEADER */
@@ -110,6 +111,7 @@ h4::before{
     align-items: center;
     width: 100vw;
     height: 20vh;
+    z-index: 100;
 }
 
 .nav-header{
@@ -326,6 +328,7 @@ h4::before{
 .button-footer:hover{
     opacity: 1;
     color: #f98f75;
+    cursor: pointer;
 }
 
 /* SEGUNDA SECCION*/
@@ -382,6 +385,7 @@ h4::before{
 .footer-contenedor-hijo-info .formato-lista-imagenes li a:hover img:hover{
     color: #F3613C;
     filter: invert(42%) sepia(63%) saturate(762%) hue-rotate(329deg) brightness(105%) contrast(91%);
+    cursor: pointer;
 }
 
 .footer-contenedor-hijo-info .formato-lista-imagenes{
@@ -420,6 +424,10 @@ h4::before{
     opacity: 1;
 }
 
+.footer-contenedor-hijo-info-form input.button:hover{
+    cursor: text;
+}
+
 .footer-contenedor-hijo-info-form .button-footer{
     width: 17rem;
     padding: 0 0.75rem;
@@ -439,6 +447,10 @@ h4::before{
     color: #8C8C94;
 }
 
+#copy-rights-text-mobile{
+    display: none;
+}
+
 #copy-rights-text-deskop{
     display: block;
 }
@@ -448,6 +460,7 @@ h4::before{
     width: 20px;
 }
 
+/* MEDIA QUERY TABLET-LAPTOP */
 
 @media (max-width: 1554px) {
     .main-section{
@@ -525,6 +538,8 @@ h4::before{
         background-position: 800px -200px;
     }
   }
+
+/* MEDIA QUERY MOBILE */
 
 @media (max-width: 520px) {
     *{
