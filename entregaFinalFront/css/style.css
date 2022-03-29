@@ -80,8 +80,9 @@ h4::before{
     text-align: left;
 }
 
-.texto-claro{
-    color: #B3B2B7;
+.texto-claro,
+#lista-nav li a:hover{
+    color:#B3B2B7;
 }
 
 .button{
