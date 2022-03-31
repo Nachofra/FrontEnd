@@ -16,6 +16,7 @@ html{
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 h1{
@@ -34,40 +35,9 @@ h3{
     font-weight: 700, bold;
 }
 
-h4{
-    position: relative;
-}
-
-h4::before{
-    font-weight: 300;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    top: -0.35rem;
-    left: -5.5rem;
-    width: 4rem;
-    height: 2.5rem;
-    background: #F3603B;
-    border-radius: 3rem;
-    color: #FFFFFF;
-}
-
 .logo-empresa{
     width: 146px;
     margin: 2rem 0;
-}
-
-.main-section-contenedor-hijo-diferencias-empresa-lista:nth-child(1) h4::before{
-    content: '01';
-}
-
-.main-section-contenedor-hijo-diferencias-empresa-lista:nth-child(2) h4::before{
-    content: '02';
-}
-
-.main-section-contenedor-hijo-diferencias-empresa-lista:nth-child(3) h4::before{
-    content: '03';
 }
 
 .titulo{
@@ -76,11 +46,10 @@ h4::before{
 }
 
 .texto{
-    color: #000000;
     text-align: left;
 }
 
-.texto-claro,
+.texto,
 #lista-nav li a:hover{
     color:#B3B2B7;
 }
@@ -141,14 +110,14 @@ h4::before{
 
 /* ESTILOS MAIN */
 
-/* PRIMERA SECCION */
-
 .main{
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* PRIMERA SECCION */
 
 .main-section{
     display: flex;
@@ -206,6 +175,41 @@ h4::before{
     justify-content: center;
 }
 
+h4{
+    position: relative;
+}
+
+h4::before{
+    /*
+    Creando botones que están antes de 
+    los titulos de la seccion 2 del main
+    */
+    font-weight: 300;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: -0.35rem;
+    left: -5.5rem;
+    width: 4rem;
+    height: 2.5rem;
+    background: #F3603B;
+    border-radius: 3rem;
+    color: #FFFFFF;
+}
+
+.main-section-contenedor-hijo-diferencias-empresa-lista:nth-child(1) h4::before{
+    content: '01';
+}
+
+.main-section-contenedor-hijo-diferencias-empresa-lista:nth-child(2) h4::before{
+    content: '02';
+}
+
+.main-section-contenedor-hijo-diferencias-empresa-lista:nth-child(3) h4::before{
+    content: '03';
+}
+
 /* TERCERA SECCION */
 
 .main-section-perfiles{
@@ -218,12 +222,6 @@ h4::before{
     justify-content: center;
     align-items: center;
     width: 100%;
-}
-
-.main-section-contenedor-perfiles .main-section-contenedor-hijo{
-    width: 30%;
-    margin: 0 0 3rem 0;
-    
 }
 
 .main-section-contenedor-hijo-perfil{
@@ -243,7 +241,32 @@ h4::before{
     text-align: center;
 }
 
+.main-section-contenedor-hijo:nth-child(2){
+    /*Aca modifico la altura del cliente del 
+    medio con una medida fija, perdón 🥺*/
+    height: 272px;
+}
+
+.main-section-contenedor-hijo-perfil .titulo{
+    /*Margin para el nombre de los clientes*/
+    margin: 5rem 5rem 1rem 5rem;
+}
+
+.main-section-contenedor-hijo-perfil img{
+    /*Posiciono los perfiles de los clientes*/
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -18%;
+}
+
+.main-section-contenedor-perfiles .main-section-contenedor-hijo {
+    width: 30%;
+    margin: 0 0 3rem 0;
+}
+
 .button-radio{
+    /* Creacion de radio buttons mobile*/
     display: none;
     margin: 0rem 0 3rem 0;
     justify-content: center;
@@ -262,28 +285,8 @@ h4::before{
     background-color: #F3613C;
 }
 
-.main-section-contenedor-hijo:nth-child(2) .main-section-contenedor-hijo-perfil .texto{
-    width: 24rem;
-}
-
-.main-section-contenedor-hijo:nth-child(2){
-    height: 272px;
-}
-
-.main-section-contenedor-hijo-perfil .titulo{
-    margin: 5rem 5rem 1rem 5rem;
-}
-
-.main-section-contenedor-hijo-perfil img{
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    top: -18%;
-
-}
-
 .main-section-perfiles .button{
-    margin: 2.5rem 0 15rem 0;
+    margin: 5.5rem 0 15rem 0;
 }
 
 
@@ -306,6 +309,10 @@ h4::before{
     align-items: center;
     width: 100%;
     height: 18rem;
+}
+
+.footer-contenedor:nth-child(1){
+    margin: 3rem 0;
 }
 
 .footer-contenedor-hijo{
@@ -338,19 +345,12 @@ h4::before{
     display: flex;
     width: 300px;
     justify-content: space-between;
-}
-
-.footer-contenedor-listas .footer-contenedor-hijo-info{
-    width: 80%;
+    margin: 0px !important;
 }
 
 .footer-contenedor-listas .footer-contenedor-hijo-info .formato-lista{
-    width: 100px;
+    width: 110px;
     margin: 1rem 0;
-}
-
-.footer-contenedor:nth-child(1){
-    margin: 3rem 0;
 }
 
 .footer-contenedor:nth-child(2){
@@ -415,23 +415,23 @@ h4::before{
     margin: 0 0.5rem;
 }
 
-.footer-contenedor-hijo-info-form .button:hover{
+#button-form:hover{
     background-color: #f98f75;
     opacity: 1;
 }
 
-.footer-contenedor-hijo-info-form .button-footer:hover{
+#input-mail{
+    width: 17rem;
+    padding: 0 0.75rem;
+}
+
+#input-mail:hover{
     background-color: #FFFFFF;
     opacity: 1;
 }
 
 .footer-contenedor-hijo-info-form input.button:hover{
     cursor: text;
-}
-
-.footer-contenedor-hijo-info-form .button-footer{
-    width: 17rem;
-    padding: 0 0.75rem;
 }
 
 .footer-contenedor-hijo > *{
