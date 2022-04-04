@@ -1,0 +1,63 @@
+@import 'mixins';
+@import 'reset';
+@import 'colors';
+@import 'fonts';
+
+body{
+    header{
+        background-color: $colorHeader;
+        padding-top: 5px;
+        img{
+            @include imagenPerfil;
+        }
+        h1{
+            @include estiloTitulo;
+            text-align: center;
+        }
+    }
+    main{
+        section{
+
+            .separador{
+                height: 100px;
+            }
+
+            article{
+                h2{
+                    @include estiloTitulo;
+                    text-align: left;
+                    padding-left: 10px;
+                }
+
+                .anio{
+                    list-style: none;
+                }
+
+                ul{
+
+                    margin: 25px;
+                    li{
+                        .info-basica{
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        @include estilosFooter;
+        #lista-footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 300px;
+
+            li{
+                display: inline;
+                color: $colorListaFooter;
+                margin: 5px;
+            }
+        }
+    }
+}

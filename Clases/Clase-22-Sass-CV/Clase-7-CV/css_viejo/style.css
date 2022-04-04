@@ -1,0 +1,67 @@
+body{
+    font-family: serif;
+    margin: 0px;
+}
+
+header{
+    background-color: #E6E6E6;
+    padding-top: 5px;
+}
+
+#spiderman{
+    display: block;
+    margin: auto;
+    height: 146px;
+    width: 146px;
+}
+
+h1{
+
+    text-align: center;
+}
+
+h2{
+    padding-left: 10px;
+}
+
+h1, h2{
+    background: #C4C4C4;
+    color: #005677;
+    letter-spacing: 5px;
+}
+
+.info-basica{
+    font-style: italic;
+}
+
+.separador{
+    height: 100px;
+}
+
+.anio{
+    list-style: none;
+}
+
+footer{
+    background: #005677;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#lista-footer{
+    list-style: none;
+    text-align: center;
+}
+
+#lista-footer li{
+    display: inline;
+    color: white;
+    margin: 5px;
+    
+}
+
+p{
+    margin: 0px;
+
+}
